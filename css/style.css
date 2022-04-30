@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar */
+nav{
+    /* border: 2px solid red; */
+    background-color: rgb(37, 9, 37);
+    color: white;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    padding: 10px;
+}
+nav ul{
+    list-style-type: none;
+}
+
+/* Game Container */
+.game-container{
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;   
+    margin-top: 30px;
+}
+.container{
+    display: grid;
+    grid-template-rows: repeat(3,15vh);
+    grid-template-columns: repeat(3,15vh);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.box{
+    border: 1px solid black;
+    font-size: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.box:hover{
+    background-color: rgb(247, 242, 252);
+}
+
+.game-info{
+    padding: 0 25px;
+}
+
+.game-info h2{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.info{
+    font-size: 25px;
+    margin: 10px 0px;
+}
+
+#reset{
+    margin: 10px 10px;
+    padding: 5px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: plum;
+    font-weight: bold;
+    font-size: 18px;
+}
+/* Utility Class */
+.br-0{
+    border-right: 0;
+}
+
+.bl-0{
+    border-left: 0;
+}
+
+.bt-0{
+    border-top: 0;
+}
+
+.bb-0{
+    border-bottom: 0;
+}
+
+
+@media screen and (max-width: 600px)
+{
+    .game-container{
+        flex-wrap: wrap;
+    }
+
+    .game-info{
+        margin-top: 15px;
+        font-size: 0.8rem;
+    }
+}
